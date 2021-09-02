@@ -1,0 +1,34 @@
+Validating found git in: git
+Using git 2.32.0 from git
+> git rev-parse --git-dir
+Open repository: /home/choleburbank/Projects/Profilo/yezarniko.github.io
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
+> git show --textconv :sass/main.scss
+> git ls-files --stage -- /home/choleburbank/Projects/Profilo/yezarniko.github.io/sass/main.scss
+> git cat-file -s d85c454ec647c52f4dfcb780ccddddd0a96b2b77
