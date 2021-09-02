@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+xidlehook --not-when-fullscreen --not-when-audio --timer 600 'lock' "" --timer 60 'systemctl   suspend' ""

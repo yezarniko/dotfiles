@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+intern="eDP-1"
+extern="HDMI-1"
+
+style="--right-of"
+
+
+case "$1" in 
+	"disconnect") xrandr --output "$extern" --off --output "$intern" --auto ;;
+	"extra") xrandr --output "$extern" --set audio auto --mode 1920x1080 &&
+		 xrandr --output "$intern" --auto --output "$extern" $style "$intern";;
+esac	
