@@ -41,17 +41,17 @@ fi
 #exec startxfce4 &&
 #xfwm4 --replace &&
 #compiz --replace &&
-#xset b off
+xset b off
 
 # enable touch to click
-#xinput set-prop 10 340 1 &&
+xinput set-prop 10 340 1 &&
 
 # disable blanking screen
-#xet -dpms &&
-#xset s off &&
+xet -dpms &&
+xset s off &&
 
 # wallpaper
-#exec nitrogen --restore &
+exec nitrogen --restore &
 
 # Qt and Plasma applications to kvantum
 export QT_STYLE_OVERRIDE=Breeze
