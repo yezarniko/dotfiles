@@ -1,0 +1,12 @@
+configuration {
+	modi: "drun,run,ssh";
+	kb-remove-char-back: "BackSpace";
+	kb-accept-entry: "Control+l,Control+h,Return,KP_Enter";
+	kb-remove-to-eol: "";
+	kb-row-down: "Down,Control+j";
+	kb-row-up: "Up,Control+k";
+	kb-row-tab: "";
+	kb-mode-next: "Tab";
+}
+
+@import "dracula.rasi"
