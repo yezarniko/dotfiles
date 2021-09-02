@@ -1,6 +1,3 @@
-# dotfiles
-
----------------- 
 **OS**: Arch Linux x86_64<br/>
 **Host**: 80XL Lenovo ideapad 320-15IKB<br/> 
 **Kernel**: 5.10.56-1-lts<br/> 
