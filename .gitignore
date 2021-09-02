@@ -1,9 +1,12 @@
 # Blacklist
 .config/*
 .config/Code/*
+.config/Code/User/*
 .vim
+.vscode
 
 # Whitelist
 !.config/Code
 !.config/Code/User
+!.config/Code/User/setting.ini
 !.config/gtk-*
