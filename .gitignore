@@ -1,8 +1,9 @@
 # Blacklist
 .config/*
+.config/Code/*
 .vim
 
 # Whitelist
+!.config/Code
 !.config/Code/User
 !.config/gtk-*
-!.config/qtile
