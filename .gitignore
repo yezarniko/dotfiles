@@ -10,3 +10,5 @@
 !.config/Code/User
 !.config/Code/User/setting.ini
 !.config/gtk-*
+!.config/alacritty
+!.config/rofi
