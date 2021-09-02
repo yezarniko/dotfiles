@@ -1,4 +1,5 @@
 #!/bin/sh
+# custom i3 screenlock script
 
 noki="mononoki Nerd Font Mono"
 background="background.png"
