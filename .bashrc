@@ -76,20 +76,6 @@ alias iwdsh="iwctl station wlan0 show"
 set -o vi
 set show-mode-in-prompt on
 
-# echo -en "Please Learn \e[36mReact\e[m and \e[34mFront End Development\e[m, \e[32mSensai!\e[m\n"
-
-# ToDo
-
-echo -en 	"
-		TODO
-
-		1. Web application using api\n
-		2. Bronchure site\n
-		3. E-commerce site\n
-		4. Personal Portfolio\n
-		5. Simple game\n
-		
-		"
 
 # StarShip
 
