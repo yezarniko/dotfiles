@@ -41,6 +41,8 @@ fi
 #exec startxfce4 &&
 #xfwm4 --replace &&
 #compiz --replace &&
+
+# beep off
 xset b off
 
 # enable touch to click
