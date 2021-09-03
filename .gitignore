@@ -2,6 +2,7 @@
 .config/*
 .config/Code/*
 .config/Code/User/*
+.config/vifm/*
 .vim
 .vscode
 
@@ -12,3 +13,8 @@
 !.config/gtk-*
 !.config/alacritty
 !.config/rofi
+!.config/starship.toml
+!.config/nvim
+!.config/vifm
+!.config/vifm/colors
+!.config/vifm/vifmrc
