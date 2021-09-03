@@ -1,65 +1,24 @@
 #!/bin/sh
 
-userresources=$HOME/.Xresources
-usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
-sysmodmap=/etc/X11/xinit/.Xmodmap
-
-# merge in defaults and keymaps
-
-if [ -f $sysresources ]; then
-
-
-    xrdb -merge $sysresources
-
-fi
-
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
-fi
-
-if [ -f "$userresources" ]; then
-
-
-    xrdb -merge "$userresources"
-
-fi
-
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
-fi
-
-# start some nice programs
-
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
-fi
-
-#exec startxfce4 &&
-#xfwm4 --replace &&
-#compiz --replace &&
 
 # beep off
-xset b off
+xset b off &
 
 # enable touch to click
-xinput set-prop 10 340 1 &&
+xinput set-prop 10 340 1 &
 
 # disable blanking screen
-xet -dpms &&
-xset s off &&
+xet -dpms &
+xset s off &
+
+# Increase Key Speed via a rate change
+xset r rate 300 50
 
 # wallpaper
-exec nitrogen --restore &
+nitrogen --restore &
 
-# Qt and Plasma applications to kvantum
-export QT_STYLE_OVERRIDE=Breeze
-export QT_QPA_PLATFORMTHEME=qt5ct
+# Compositor 
+picom --experimental-backends &
 
 # start Qtile windows manager 
-exec qtile start 
-
-
+exec qtile start
