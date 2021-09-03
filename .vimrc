@@ -5,68 +5,39 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-
 Plugin 'VundleVim/Vundle.vim'
 
+" LightLine
 Plugin 'itchyny/lightline.vim'
+
+" Vifm
 Plugin 'vifm/vifm.vim'
 
+" Nerd Tree
 Plugin 'scrooloose/nerdtree'
 
+" SuperTab
 Plugin 'ervandew/supertab'
 
+" Themes
 Plugin 'tomasr/molokai'
 Plugin 'tomasiser/vim-code-dark'
+Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 
+" Syntax
 Plugin 'cespare/vim-toml'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+" Git
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 
-" lightbar Configuration
-set laststatus=2
-set noshowmode
-let g:lightline = {
-	      \ 'colorscheme': 'wombat',
-	      \ }
 
-" molokai Configuration
-let g:molokai_original = 1
+" Config Start Here
+
 
 
 " Default Vim Configuration
@@ -115,20 +86,33 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-" My Other Configurations
+
+
+
+" My Configurations
+
+" lightbar Configuration
+set laststatus=2
+set noshowmode
+let g:lightline = {
+	      \ 'colorscheme': 'wombat',
+	      \ }
+
+" molokai Configuration
+let g:molokai_original = 1
+
+" Mouse
 set mouse=a
+
+" Relative Number
 set number relativenumber
-
-
 
 " Clip Board
 set clipboard=unnamed
 
-
+" System Clipboard
 noremap <c-c> "+y :let @+=@*<CR>
 map <c-p> "+p
-
-
 
 " Moving Around Windows
 noremap <c-h> <c-w><c-h>
@@ -136,13 +120,8 @@ noremap <c-j> <c-w><c-j>
 noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 
-
-
 " Folding
 " set foldmethod=indent
 
-
 " Theme
 colorscheme codedark
-
-
