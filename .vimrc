@@ -95,8 +95,15 @@ endif
 set laststatus=2
 set noshowmode
 let g:lightline = {
-	      \ 'colorscheme': 'wombat',
-	      \ }
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 
 " molokai Configuration
 let g:molokai_original = 1
