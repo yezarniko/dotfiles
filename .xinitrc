@@ -12,7 +12,13 @@ xet -dpms &
 xset s off &
 
 # Increase Key Speed via a rate change
-xset r rate 300 50
+xset r rate 300 50 &
+
+# Keybindings
+sxhkd &
+
+# Autolock Screen
+autolock &
 
 # wallpaper
 nitrogen --restore &
