@@ -2,7 +2,7 @@
 # custom i3 screenlock script
 
 noki="mononoki Nerd Font Mono"
-background="background.png"
+background="$HOME/.local/img/background.png"
 
 i3lock -e -i $background -C --layout-font="$noki" --verif-font="$noki" --wrong-font="$noki" --insidever-color=66d9ef55 --insidewrong-color=c1c1c155 --ringver-color=66d9ef01 --ringwrong-color=bb432c --line-color=ffffff11  --verif-text="..."
 
