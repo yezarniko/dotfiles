@@ -1,5 +1,7 @@
 configuration {
-	modi: "drun,run,ssh";
+	modi: "combi,drun,run,ssh";
+	combi-modi: "drun,run,ssh";
+	thread: 4;
 	kb-remove-char-back: "BackSpace";
 	kb-accept-entry: "Control+l,Control+h,Return,KP_Enter";
 	kb-remove-to-eol: "";
