@@ -19,6 +19,10 @@ Print
 alt + l
 	lock
 
+# Toggle Input
+super + space
+	toggle-keyboard-layout
+
 
 # Applications
 super + r
