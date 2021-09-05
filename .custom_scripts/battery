@@ -1,0 +1,33 @@
+#!/usr/bin/python3.9
+
+import subprocess
+import sys
+
+battery_class = "/sys/class/power_supply/BAT0/"
+help_message = """
+Usage
+-----
+
+battery {status, capacity}
+"""
+
+
+def run(c):
+    return subprocess.run(c, capture_output=True).stdout.decode('utf-8')[:-1]
+
+
+def getbattery(*cmds):
+    commands = {
+        "status": battery_class + "status",
+        "capacity": battery_class + "capacity"
+    }
+    return "\n".join([c + ": " + run(["cat", commands[c]]) for c in cmds if c in commands.keys()])
+
+
+if len(sys.argv) < 2:
+    status = getbattery("capacity", "status")
+else:
+    status = getbattery(sys.argv[1])
+
+
+print(status if status != "" else help_message)

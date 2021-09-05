@@ -1,0 +1,10 @@
+#!/bin/sh
+# Switch keyboard input layout between english and myanmar
+
+current_language="$(setxkbmap -query | grep layout | egrep '\w\w$' -o)"
+
+if [ $current_language = "us" ]; then
+	setxkbmap mm
+elif [ $current_language = "mm" ]; then
+	setxkbmap us
+fi
