@@ -4,5 +4,9 @@
 noki="mononoki Nerd Font Mono"
 background="$HOME/.local/img/background.png"
 
+# Switch Input to English
+setxkbmap us
+
+# i3locker
 i3lock -e -i $background -C --layout-font="$noki" --verif-font="$noki" --wrong-font="$noki" --insidever-color=66d9ef55 --insidewrong-color=c1c1c155 --ringver-color=66d9ef01 --ringwrong-color=bb432c --line-color=ffffff11  --verif-text="..."
 
