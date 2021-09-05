@@ -5,6 +5,7 @@
 .config/vifm/*
 .vim
 .vscode
+*~
 
 # Whitelist
 !.config/Code
