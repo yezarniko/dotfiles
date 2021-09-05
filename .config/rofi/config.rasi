@@ -3,7 +3,7 @@ configuration {
 	combi-modi: "drun,run,ssh";
 	thread: 4;
 	kb-remove-char-back: "BackSpace";
-	kb-accept-entry: "Control+l,Control+h,Return,KP_Enter";
+	kb-accept-entry: "Control+h,Return,KP_Enter";
 	kb-remove-to-eol: "";
 	kb-row-down: "Down,Control+j";
 	kb-row-up: "Up,Control+k";
