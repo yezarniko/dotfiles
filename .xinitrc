@@ -24,7 +24,7 @@ autolock &
 nitrogen --restore &
 
 # Compositor 
-picom --experimental-backends &
+picom --config ~/.config/picom/picom.conf --experimental-backends &
 
 # start Qtile windows manager 
 exec qtile start
