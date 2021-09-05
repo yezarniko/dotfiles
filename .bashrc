@@ -52,13 +52,11 @@ alias py='/usr/bin/python3'
 alias pip='python3 -m pip'
 alias hostname='echo $HOSTNAME'
 
-
 # config file
 alias vq='vim ~/.config/qtile/config.py'
 
 # systemd 
 alias SS='sudo systemctl'
-
 
 # adb
 alias Sadbss="sudo adb start-server"
@@ -71,6 +69,10 @@ alias iwdc="iwctl station wlan0 connect"
 alias iwdd="iwctl station wlan0 disconnect"
 alias iwdsh="iwctl station wlan0 show"
 
+# nvim
+alias vim="nvim"
+alias nv="nvim"
+
 
 # Vi Mode
 set -o vi
@@ -78,5 +80,4 @@ set show-mode-in-prompt on
 
 
 # StarShip
-
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
