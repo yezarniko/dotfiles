@@ -3,8 +3,10 @@
 .config/Code/*
 .config/Code/User/*
 .config/vifm/*
+.config/qtile/__pycache__
 .vim
 .vscode
+*~
 
 # Whitelist
 !.config/Code
@@ -19,4 +21,5 @@
 !.config/vifm/colors
 !.config/vifm/vifmrc
 !.config/sxhkd
-!.config/picom/
+!.config/picom
+!.config/qtile
