@@ -17,6 +17,7 @@ terminal = guess_terminal()
 colors = {
     "dracula": {
         "pink":     "#ad69af",
+        "decade":   "#c678dd",
         "green":    "#50fa7b",
         "black":    "#000000",
         "red":      "#ff5555",
@@ -25,6 +26,8 @@ colors = {
         "cyan":     "#8be9fd",
         "white":    "#bfbfbf",
         "gray":     "#1d2330",
+        "code":     "#1d2021",
+        "gray-blue": "#a9a1e1",
     },
 }
 
@@ -100,30 +103,53 @@ for i, n in enumerate(groups):
 # Widgets
 
 widget_defaults = dict(
-    font='sans',
-    fontsize=12,
+    font='mononoki Nerd Font Regular',
+    fontsize=15,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
 
+groupBoxDecadeTheme = {
+    "active": colors["dracula"]["decade"],
+    "inactive": colors["dracula"]["gray-blue"],
+    "background": colors["dracula"]["code"],
+    "font": "Roboto Bold",
+    "highlight_method": "line",
+    "highlight_color": colors["dracula"]["code"],
+    "this_current_screen_border": colors["dracula"]["green"],
+    "borderwidth": 2.2,
+}
+
+decade_bar_widgets = [
+    widget.Image(
+        filename="",
+        scale="False",
+    ),
+    widget.GroupBox(**groupBoxDecadeTheme),
+    widget.WindowName(
+        background=colors["dracula"]["pink"],
+        foreground=colors["dracula"]["black"],
+        font="mononoki Nerd Font Bold",
+    ),
+    widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+]
+
 
 # Bar
 
-my_bar = (
-    [
-        widget.CurrentLayout(),
-        widget.GroupBox(),
-        widget.WindowName(),
-        widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-    ],
-    24
-)
+decade_bar = {
+    "widgets": decade_bar_widgets,
+    "size": 26,
+    "margin": [0, 0, 4, 0],
+    "background": colors["dracula"]["gray"],
+    "opacity": .9,
+}
 
 # Screens
 
 screens = [
-    Screen(bottom=bar.Bar(*my_bar)),
-    Screen(top=bar.Bar(*my_bar)),
+    Screen(bottom=bar.Bar(**decade_bar)),
+    Screen(top=bar.Bar(**decade_bar)),
 ]
 
 
