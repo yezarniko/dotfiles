@@ -1,3 +1,13 @@
+"       _           
+"__   _(_)_ __ ___  
+"\ \ / / | '_ ` _ \ 
+" \ V /| | | | | | |
+"  \_/ |_|_| |_| |_|
+"
+"the ubiquitous text editor
+
+
+                   
 set nocompatible              " be iMproved, required
 filetype off                  " required
 

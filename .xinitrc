@@ -1,4 +1,11 @@
 #!/bin/sh
+#      _       _ _            
+#__  _(_)_ __ (_) |_ _ __ ___ 
+#\ \/ / | '_ \| | __| '__/ __|
+# >  <| | | | | | |_| | | (__ 
+#/_/\_\_|_| |_|_|\__|_|  \___|
+# 
+# The xinit program allows a user to manually start an X display server.
 
 
 # beep off

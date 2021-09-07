@@ -1,4 +1,12 @@
-# Kamenrider Decade Configurations :)
+#       _   _ _
+#  __ _| |_(_) | ___
+# / _` | __| | |/ _ \
+# | (_| | |_| | |  __/
+# \__, |\__|_|_|\___|
+#    |_|
+#
+# A full-featured, hackable tiling window manager
+# written and configured in Python
 
 
 from typing import List
