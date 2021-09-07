@@ -1,3 +1,5 @@
 [user]
 	email = yezarniko@protonmail.com
 	name = yezarniko
+[core]
+	editor = nvim
