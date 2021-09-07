@@ -1,7 +1,7 @@
 #~ master λ➜
 
 
-format ="$directory$git_branch [λ➜](bold blue) "
+format ="$cmd_duration$directory$git_branch [λ➜](bold blue) "
 add_newline = false
 
 
@@ -11,3 +11,7 @@ format="[$path](bold purple)"
 [git_branch]
 format=" [$symbol](bold red)[$branch](bold white)"
 symbol=""
+
+[cmd_duration]
+min_time=500
+format="[$duration](bold white) "
