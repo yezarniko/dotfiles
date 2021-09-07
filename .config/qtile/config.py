@@ -111,7 +111,7 @@ for i, n in enumerate(groups):
 # Widgets
 
 widget_defaults = dict(
-    font='mononoki Nerd Font Regular',
+    font='mononoki Nerd Font Bold',
     fontsize=15,
     padding=3,
 )
@@ -129,15 +129,22 @@ groupBoxDecadeTheme = {
 }
 
 decade_bar_widgets = [
-    widget.Image(
-        filename="",
-        scale="False",
-    ),
     widget.GroupBox(**groupBoxDecadeTheme),
     widget.WindowName(
         background=colors["dracula"]["pink"],
         foreground=colors["dracula"]["black"],
-        font="mononoki Nerd Font Bold",
+    ),
+    widget.CheckUpdates(
+        update_interval=1800,
+        colour_have_updates=colors["dracula"]["green"],
+        colour_no_updates=colors["dracula"]["green"],
+        display_format='📦⬆️  <span color="#c678dd">({updates})</span> ',
+        no_update_string="📦 ",
+    ),
+    widget.Net(
+        fontsize=16,
+        font="mononoki Nerd Font Mono",
+        format='{down}<span color="#50fa7b">▽</span> {up}<span color="#50fa7b">△</span>',
     ),
     widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
 ]
@@ -150,7 +157,7 @@ decade_bar = {
     "size": 26,
     "margin": [0, 0, 4, 0],
     "background": colors["dracula"]["gray"],
-    "opacity": .9,
+    "opacity": 1,
 }
 
 # Screens
