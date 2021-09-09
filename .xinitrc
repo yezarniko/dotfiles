@@ -24,6 +24,9 @@ xset r rate 300 50 &
 # Keybindings
 sxhkd &
 
+# Notifications
+dunst &
+
 # Autolock Screen
 autolock &
 
