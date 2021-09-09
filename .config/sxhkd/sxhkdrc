@@ -10,14 +10,14 @@
 
 # Volume Control
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
-	amixer set 'Master' {5%+, 5%-}
+	amixer set 'Master' {5%+, 5%-} -q && vol-notify
 
 XF86AudioMute
-	amixer -D pulse set Master 1+ toggle
+	amixer -D pulse set Master 1+ toggle -q && vol-notify
 
 # Brightness Control
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
-	brightnessctl -d intel_backlight set {5%+, 5%-}
+	brightnessctl -d intel_backlight set {5%+, 5%-} -q && bright-notify
 	
 
 # ScreenShot
