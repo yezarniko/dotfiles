@@ -1,0 +1,6 @@
+#!/bin/bash
+# notify brightness
+
+
+backlight=$(brightnessctl -d 'intel_backlight' | egrep -o '\w+%')
+notify-send -t 700 $backlight -i brightnesssettings -h string:x-canonical-private-synchronous:anything
