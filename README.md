@@ -15,6 +15,7 @@
 [Vim](.vimrc) - Best Text Editor,IDE<br/>
 [Neovim](.config/nvim/init.vim) - An Implementation of Vim<br/>
 [Sxhkd](.config/sxhkd/sxhkdrc) - Keybindings<br/>
+[Dunst](.config/dunst/dunstrc) - Notifications Daemon<br/>
 [Picom](.config/picom/picom.conf) - Compositor<br/>
 [Starship](.config/starship.toml) - Shell Prompt<br/>
 [Rofi](.config/rofi/config.rasi) - Simple Menu and Applications Launcher<br/>
