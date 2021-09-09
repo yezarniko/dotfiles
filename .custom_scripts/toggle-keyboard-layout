@@ -2,9 +2,12 @@
 # Switch keyboard input layout between english and myanmar
 
 current_language="$(setxkbmap -query | grep layout | egrep '\w\w$' -o)"
+cmd="notify-send -t 700 -h string:x-canonical-private-synchronous:anything -i fcitx-kbd"
 
 if [ $current_language = "us" ]; then
 	setxkbmap mm
+	$cmd "switch to burmese"
 elif [ $current_language = "mm" ]; then
 	setxkbmap us
+	$cmd "switch to english"
 fi
