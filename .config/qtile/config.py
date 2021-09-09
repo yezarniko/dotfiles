@@ -24,18 +24,21 @@ terminal = guess_terminal()
 
 colors = {
     "dracula": {
-        "pink":     "#ad69af",
-        "decade":   "#c678dd",
-        "green":    "#50fa7b",
-        "black":    "#000000",
-        "red":      "#ff5555",
-        "yellow":   "#f1fa8c",
-        "magenta":  "#ff79c6",
-        "cyan":     "#8be9fd",
-        "white":    "#bfbfbf",
-        "gray":     "#1d2330",
-        "code":     "#1d2021",
-        "gray-blue": "#a9a1e1",
+        "pink":             "#ad69af",
+        "decade":           "#c678dd",
+        "indigo":           "#6144e6",
+        "indigo-light":     "#694bff",
+        "green":            "#50fa7b",
+        "black":            "#000000",
+        "red":              "#ff5555",
+        "orange":           "#ea1c25",
+        "yellow":           "#f1fa8c",
+        "magenta":          "#ff79c6",
+        "cyan":             "#8be9fd",
+        "white":            "#bfbfbf",
+        "gray":             "#1d2330",
+        "code":             "#1d2021",
+        "gray-blue":        "#a9a1e1",
     },
 }
 
@@ -111,35 +114,62 @@ for i, n in enumerate(groups):
 # Widgets
 
 widget_defaults = dict(
-    font='mononoki Nerd Font Regular',
+    font='mononoki Nerd Font Bold',
     fontsize=15,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
 
 groupBoxDecadeTheme = {
-    "active": colors["dracula"]["decade"],
-    "inactive": colors["dracula"]["gray-blue"],
+    "active": colors["dracula"]["indigo-light"],
+    "inactive": colors["dracula"]["black"],
     "background": colors["dracula"]["code"],
     "font": "Roboto Bold",
     "highlight_method": "line",
     "highlight_color": colors["dracula"]["code"],
-    "this_current_screen_border": colors["dracula"]["green"],
+    "this_current_screen_border": colors["dracula"]["red"],
     "borderwidth": 2.2,
 }
 
+sepTheme = {
+    "linewidth": 3,
+    "size_percent": 100,
+    "foreground": colors["dracula"]["red"],
+}
+
 decade_bar_widgets = [
-    widget.Image(
-        filename="",
-        scale="False",
-    ),
     widget.GroupBox(**groupBoxDecadeTheme),
+    widget.Sep(**sepTheme),
     widget.WindowName(
-        background=colors["dracula"]["pink"],
+        background=colors["dracula"]["indigo-light"],
         foreground=colors["dracula"]["black"],
-        font="mononoki Nerd Font Bold",
     ),
-    widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+    widget.Sep(**sepTheme),
+    widget.CheckUpdates(
+        update_interval=1800,
+        colour_have_updates=colors["dracula"]["green"],
+        colour_no_updates=colors["dracula"]["green"],
+        display_format='📦⬆️<span color="#c678dd">({updates})</span> ',
+        no_update_string="📦 ",
+    ),
+    widget.Net(
+        fontsize=16,
+        font="mononoki Nerd Font Mono",
+        format='{down}<span color="#50fa7b">▽</span> {up}<span color="#50fa7b">△</span> ',
+        foreground=colors["dracula"]["gray-blue"],
+    ),
+    widget.Clock(
+        format='<span color="#ff5555">🕐</span> %I:%M %p ',
+        foreground=colors["dracula"]["gray-blue"],
+    ),
+    widget.Battery(
+        format='<span color="#50fa7b">{char}</span>{percent:2.0%}',
+        discharge_char='',
+        charge_char='⚡️',
+        notify_below=True,
+        fontsize=16,
+        foreground=colors["dracula"]["gray-blue"],
+    ),
 ]
 
 
@@ -150,7 +180,7 @@ decade_bar = {
     "size": 26,
     "margin": [0, 0, 4, 0],
     "background": colors["dracula"]["gray"],
-    "opacity": .9,
+    "opacity": 1,
 }
 
 # Screens

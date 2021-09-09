@@ -1,0 +1,25 @@
+#!/bin/bash
+# notify current volume with custorm icons
+
+timeout=700
+
+if [ $(amixer get 'Master' | egrep '\[\w+\]' -o | head -1) = "[on]" ]; then
+	volume=$(amixer get 'Master' | egrep '\w+%' -o | head -1)
+	notify_cmd="notify-send -t $timeout -h string:x-canonical-private-synchronous:anything $volume -i "
+	if [ $(echo -en $volume | wc -c) = 4 ]; then
+		$notify_cmd audio-volume-high
+	else
+		percent=${volume::1}
+		if [ $percent -ge 8 ]; then
+			$notify_cmd audio-volume-high
+		elif [ $percent -ge 5 ]; then
+			$notify_cmd audio-volume-medium
+		elif [ $percent -ge 1 ]; then
+			$notify_cmd audio-volume-low
+		fi
+	fi
+
+else
+	notify-send -t $timeout "Muted" -i audio-volume-muted
+fi
+
