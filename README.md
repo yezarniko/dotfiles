@@ -29,14 +29,21 @@
 
 ## My Current System
 **OS**: Arch Linux x86_64<br/>
-**Host**: 80XL Lenovo ideapad 320-15IKB<br/> 
 **Shell**: bash<br/> 
-**Resolution**: 1366x768<br/> 
 **WM**: qtile (LG3D)<br/> 
 **Theme**: Dracula [GTK2], Ant-Dracula [GTK3]<br/> 
 **Icons**: Papirus-Light [GTK2/3]<br/> 
-**Terminal**: alacritty<br/> 
-**CPU**: Intel i3-7100U (4) @ 2.400GHz<br/> 
-**GPU**: Intel HD Graphics 620<br/> 
-**GPU**: NVIDIA GeForce 920MX<br/> 
-**Memory**: 1741MiB / 11883MiB<br/> 
+**Terminal**: alacritty<br/>
+
+## Install
+  Install from package manager.</br>
+  `sudo pacman -S alacritty qtil xorg-xinit vim neovim sxhkd dunst starship rofi vifm paru`<br/>
+  <br/>picom has a lot of fork and I use jonaburg's one.<br/>`paru picom-jonaburg-git`<br/>
+
+
+## Install Custom Scripts Dependencies
+
+### Arch
+Install from package manager.</br>
+`sudo pacman -S xorg python3 brightnessctl libxrandr libnotify paru`<br/>
+<br/>these packages doesn't avaliable in official repo so intall from AUR.<br/>`paru xidlehook i3lock-color`<br/>
