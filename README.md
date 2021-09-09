@@ -9,16 +9,16 @@
 
 ## Configurations
 [Alacritty](.config/alacritty/alacritty.yml) - Terminal<br/>
-[Qtile](.config/qtile/config.py) - Window Manager<br/>
-[Xinit](.xinitrc) - X11 display server<br/>
+[Qtile](.config/qtile/config.py) - Window Manager written and configured in Python<br/>
+[Xinit](.xinitrc) - X display server<br/>
 [Bash](.bashrc) - Bash<br/>
 [Vim](.vimrc) - Best Text Editor,IDE<br/>
 [Neovim](.config/nvim/init.vim) - An Implementation of Vim<br/>
-[Sxhkd](.config/sxhkd/sxhkdrc) - Keybindings<br/>
-[Dunst](.config/dunst/dunstrc) - Notifications Daemon<br/>
-[Picom](.config/picom/picom.conf) - Compositor<br/>
+[Sxhkd](.config/sxhkd/sxhkdrc) - Keybindings Deamon<br/>
+[Dunst](.config/dunst/dunstrc) - Lightweight Notifications Daemon<br/>
+[Picom](.config/picom/picom.conf) - Standalone Compositor For Xorg<br/>
 [Starship](.config/starship.toml) - Shell Prompt<br/>
-[Rofi](.config/rofi/config.rasi) - Simple Menu and Applications Launcher<br/>
+[Rofi](.config/rofi/config.rasi) - Applications Launcher<br/>
 [Vifm](.config/vifm/vifmrc) - Terminal Base Filemanager with Vim keybindings<br/>
 [Custom Scripts](.custom_scripts) - My Custom Scripts
 
