@@ -96,7 +96,7 @@ Added these two lines to one of these `~/.bashrc`, `~/.bash_profile`, `~/.xinitr
 `export QT_STYLE_OVERRIDE=Breeze`  
 `export QT_QPA_PLATFORMTHEME=qt5ct`  
 
-If you want to use dracula with kvantum engine, replace Breeze with Kvantum. And then run `kvantummanager` and change theme.
+If you want to use dracula with kvantum engine, replace `Breeze` with `Kvantum`. And then run `kvantummanager` and change theme.
 
 ### Fonts
 The fonts I mostly use are `Roboto` and `mononoki Nerd Font`.
