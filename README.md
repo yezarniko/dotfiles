@@ -96,3 +96,6 @@ If you want to use dracula with kvantum engine, replace Breeze with Kvantum. And
 
 ### Fonts
 The fonts I mostly use are `Roboto` and `mononoki Nerd Font`.
+
+## Wish
+Good Luck my dear future me. Happy hacking!
