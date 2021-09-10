@@ -43,7 +43,7 @@
 ## Setup
 ***This section*** is for future me and someone who want to use my configs.
 
-### First Time Setup
+### New Linux Installation Setup
 
 >:warning: **warning:** Run this script only when new machine setup or when new linux installation because this script can break your current configurations.
 
