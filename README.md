@@ -8,19 +8,19 @@
 
 
 ## Configurations
-[Alacritty](.config/alacritty/alacritty.yml) - Terminal<br/>
-[Qtile](.config/qtile/config.py) - Window Manager written and configured in Python<br/>
-[Xinit](.xinitrc) - X display server<br/>
-[Bash](.bashrc) - Bash<br/>
-[Vim](.vimrc) - Best Text Editor,IDE<br/>
-[Neovim](.config/nvim/init.vim) - An Implementation of Vim<br/>
-[Sxhkd](.config/sxhkd/sxhkdrc) - Keybindings Deamon<br/>
-[Dunst](.config/dunst/dunstrc) - Lightweight Notifications Daemon<br/>
-[Picom](.config/picom/picom.conf) - Standalone Compositor For Xorg<br/>
-[Starship](.config/starship.toml) - Shell Prompt<br/>
-[Rofi](.config/rofi/config.rasi) - Applications Launcher<br/>
-[Vifm](.config/vifm/vifmrc) - Terminal Base Filemanager with Vim keybindings<br/>
-[Custom Scripts](.custom_scripts) - My Custom Scripts
+- [Alacritty](.config/alacritty/alacritty.yml) - Terminal<br/>
+- [Qtile](.config/qtile/config.py) - Window Manager written and configured in Python<br/>
+- [Xinit](.xinitrc) - X display server<br/>
+- [Bash](.bashrc) - Bash<br/>
+- [Vim](.vimrc) - Best Text Editor,IDE<br/>
+- [Neovim](.config/nvim/init.vim) - An Implementation of Vim<br/>
+- [Sxhkd](.config/sxhkd/sxhkdrc) - Keybindings Deamon<br/>
+- [Dunst](.config/dunst/dunstrc) - Lightweight Notifications Daemon<br/>
+- [Picom](.config/picom/picom.conf) - Standalone Compositor For Xorg<br/>
+- [Starship](.config/starship.toml) - Shell Prompt<br/>
+- [Rofi](.config/rofi/config.rasi) - Applications Launcher<br/>
+- [Vifm](.config/vifm/vifmrc) - Terminal Base Filemanager with Vim keybindings<br/>
+- [Custom Scripts](.custom_scripts) - My Custom Scripts
 
 
 
@@ -52,15 +52,15 @@ Run setup: `./setup.sh`
 
 ### Setup Manually
 I recommended directly copy the configurations.
-#### Linking
+#### 1. Linking
 Clone this repo and link files manually. example: `ln -s $PWD/.dotfiles/alacritty/ ~/.config/alacritty`
-#### Raw Files
+#### 2. Raw Files
 Or download custom raw files and place in correct directory `~/.config` or `home`.<br/>
 example what if picom: <br/>
 `cd ~/.config && mkdir picom && cd picom`<br/>
 download raw file.<br/>
 `wget https://raw.githubusercontent.com/yezarniko/dotfiles/main/.config/picom/picom.conf`
-#### Copy Directly
+#### 3. Copy Directly
 Or copy custom configurations.<br/>
 
 ### Install Packages
@@ -93,6 +93,7 @@ Or dracula with kvantum `paru kvantum-qt5 kvantum-theme-materia ant-dracula-kvan
 Added these two lines to one of these `~/.bashrc`, `~/.bash_profile`, `~/.xinitrc`.<br/>
 `export QT_STYLE_OVERRIDE=Breeze`<br/>
 `export QT_QPA_PLATFORMTHEME=qt5ct`<br/>
+
 If you want to use dracula with kvantum engine, replace Breeze with Kvantum. And then run `kvantummanager` and change theme.
 
 ### Fonts
