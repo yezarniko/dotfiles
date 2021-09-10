@@ -45,7 +45,7 @@
 
 ### First Time Setup
 
->:warning: **warning:** Run this script only when new machine setup or when new linux installation because this script can break your current configurations.*
+>:warning: **warning:** Run this script only when new machine setup or when new linux installation because this script can break your current configurations.
 
 Set permission: `chmod +x setup.sh`<br/>
 Run setup: `./setup.sh`
