@@ -3,5 +3,7 @@
     "workbench.iconTheme": "vscode-icons",
     "editor.fontSize": 18,
     "editor.lineNumbers": "relative",
-    "vim.vimrc.path": "$HOME/.vimrc"
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "terminal.integrated.fontFamily": "mononoki Nerd Font Mono",
+    "terminal.integrated.fontSize": 18
 }
