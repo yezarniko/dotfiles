@@ -75,12 +75,12 @@ Or copy custom configurations.
 
 Install from your package manager.  
 `sudo pacman -S xorg python3 brightnessctl libxrandr libnotify paru`  
-xidlehook is the same as xautolock but rewrite in Rust. Also i3lock-color is exactly the same as i3lock but I love to have colors.  
+xidlehook is the same as xautolock but rewritten in Rust. Also i3lock-color is exactly the same as i3lock but I love to have colors.  
 `paru xidlehook i3lock-color`  
 
 
 ## Appearance
-I love to have uniform look in all apps, mainly in terminal and gtk apps.So I mainly use one theme called [dracula](https://draculatheme.com/).
+I also love to have uniform look in all apps, mainly in terminal and gtk apps.So I mainly use one theme called [dracula](https://draculatheme.com/).
 But most qt(kde) apps like virtualbox, qbittorrent and okular are look weired with dracula theme.I used Breeze theme for this apps.
 For icons, I mainly used Papirus.
 
