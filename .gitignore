@@ -23,3 +23,5 @@
 !.config/sxhkd
 !.config/picom
 !.config/qtile
+!.config/dunst
+!*.png
