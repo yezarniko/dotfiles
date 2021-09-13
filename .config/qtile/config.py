@@ -178,7 +178,7 @@ decade_bar_widgets = [
 decade_bar = {
     "widgets": decade_bar_widgets,
     "size": 26,
-    "margin": [0, 0, 4, 0],
+    "margin": [4, 0, 4, 0],
     "background": colors["dracula"]["gray"],
     "opacity": 1,
 }
