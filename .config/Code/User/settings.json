@@ -5,5 +5,12 @@
     "editor.lineNumbers": "relative",
     "vim.vimrc.path": "$HOME/.vimrc",
     "terminal.integrated.fontFamily": "mononoki Nerd Font Mono",
-    "terminal.integrated.fontSize": 18
+    "terminal.integrated.fontSize": 18,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }
