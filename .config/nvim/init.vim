@@ -37,4 +37,4 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
 let g:gitgutter_enabled= 1
 let g:gitgutter_map_keys= 0
 let g:gitgutter_highlight_linenrs = 1
-
+set updatetime=100
