@@ -75,6 +75,8 @@ alias iwdsh="iwctl station wlan0 show"
 alias vim="nvim"
 alias nv="nvim"
 
+# fonts-list
+alias fonts-list="fc-list"
 
 # Vi Mode
 set -o vi
