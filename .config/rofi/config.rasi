@@ -9,8 +9,8 @@
 */
 
 configuration {
-  modi: "combi,drun,run,ssh";
-  combi-modi: "drun,run,ssh";
+  modi: "run,ssh,combi";
+  combi-modi: "run,ssh";
   thread: 4;
   kb-remove-char-back: "BackSpace";
   kb-accept-entry: "Control+h,Return,KP_Enter";
