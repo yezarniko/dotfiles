@@ -20,6 +20,7 @@
 !.config/vifm
 !.config/vifm/colors
 !.config/vifm/vifmrc
+!.config/vifm/scripts
 !.config/sxhkd
 !.config/picom
 !.config/qtile
