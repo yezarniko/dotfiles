@@ -81,7 +81,7 @@ xidlehook is the same as xautolock but rewritten in Rust. Also i3lock-color is e
 ### Install Vifmimg Script For Vifm's Image Preview, Video Thumbnail and others
 `git clone git@github.com:cirala/vifmimg.git && cd vifmimg`   
 `sudo make install`   
-Prerequisites here [https://github.com/cirala/vifmimg](https://github.com/cirala/vifmimg).
+Prerequisites here [https://github.com/cirala/vifmimg#prerequisites](https://github.com/cirala/vifmimg#prerequisites).
 
 
 ## Appearance
