@@ -1,28 +1,4 @@
 # Blacklist
-.config/*
-.config/Code/*
-.config/Code/User/*
-.config/vifm/*
-.config/qtile/__pycache__
-.vim
-.vscode
 *~
 
 # Whitelist
-!.config/Code
-!.config/Code/User
-!.config/Code/User/setting.ini
-!.config/gtk-*
-!.config/alacritty
-!.config/rofi
-!.config/starship.toml
-!.config/nvim
-!.config/vifm
-!.config/vifm/colors
-!.config/vifm/vifmrc
-!.config/vifm/scripts
-!.config/sxhkd
-!.config/picom
-!.config/qtile
-!.config/dunst
-!*.png

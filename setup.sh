@@ -13,28 +13,57 @@ echo -ne "Do you want to Setup?${BLUE}(Enter ${RED}Yes${WHITE}/${GREEN}n${BLUE})
 read answer
 
 if [ $answer = "Yes" ]; then
+    # Manual Link
 
 	# Configurations
-	rm ~/.config
-	ln -s $PWD/.config ~/.config
-	ln -s $PWD/.vim ~/.vim
-	ln -s $PWD/.vscode ~/.vscode
+	[ -f ~/.bash_profile ] && rm ~/.bash_profile
 	ln -s $PWD/.bash_profile ~/.bash_profile
+	echo "ln -s $PWD/.bash_profile ~/.bash_profile"
+
+	[ -f ~/.bashrc ] && rm ~/.bashrc
 	ln -s $PWD/.bashrc ~/.bashrc
+	echo "ln -s $PWD/.bashrc ~/.bashrc"
+
+	[ -f ~/.gitconfig ] && rm ~/.gitconfig
 	ln -s $PWD/.gitconfig ~/.gitconfig
+	echo "ln -s $PWD/.gitconfig ~/.gitconfig"
+
+	[ -f ~/.gtkrc-2.0 ] && rm ~/.gtkrc-2.0
 	ln -s $PWD/.gtkrc-2.0 ~/.gtkrc-2.0
+	echo "ln -s $PWD/.gtkrc-2.0 ~/.gtkrc-2.0"
+
+	[ -f ~/.vimrc ] && rm ~/.vimrc 	
 	ln -s $PWD/.vimrc ~/.vimrc
+	echo "ln -s $PWD/.vimrc ~/.vimrc"
+
+	[ -f ~/.xinitrc ] && rm ~/.xinitrc 	 
 	ln -s $PWD/.xinitrc ~/.xinitrc
+	echo "ln -s $PWD/.xinitrc ~/.xinitrc"
 
 	# Lock Screen Background
+	[ -f ~/.local/img/background.png ] && rm ~/.local/img/background.png
 	ln -s $PWD/.img/background.png ~/.local/img/background.png
+	echo "ln -s $PWD/.img/background.png ~/.local/img/background.png"
 
-	# Custom Scripts
-	ln -s $PWD/.custom_scripts/dis ~/.local/bin
-	ln -s $PWD/.custom_scripts/lock ~/.local/bin
-	ln -s $PWD/.custom_scripts/autolock ~/.local/bin
-	ln -s $PWD/.custom_scripts/battery ~/.local/bin
-	ln -s $PWD/.custom_scripts/vol-notify ~/.local/bin
-	ln -s $PWD/.custom_scripts/bright-notify ~/.local/bin
-	ln -s $PWD/.custom_scripts/toggle-keyboard-layout ~/.local/bin
+	# .config manual configs
+	[ -f ~/.config/Code/User/settings.json ] && rm ~/.config/Code/User/settings.json
+	ln -s $PWD/.config/Code/User/settings.json ~/.config/Code/User/settings.json
+	echo "ln -s $PWD/.config/Code/User/settings.json ~/.config/Code/User/settings.json"
+
+	[ -d ~/.config/vifm/colors ] && rm ~/.config/vifm/colors -r
+	ln -s $PWD/.config/vifm/colors ~/.config/vifm/colors
+	echo "ln -s $PWD/.config/vifm/colors ~/.config/vifm/colors"
+
+	[ -d ~/.config/vifm/scripts ] && rm ~/.config/vifm/scripts -r
+	ln -s $PWD/.config/vifm/scripts ~/.config/vifm/scripts
+	echo "ln -s $PWD/.config/vifm/scripts ~/.config/vifm/scripts"
+
+	[ -f ~/.config/vifm/vifmrc ] && rm ~/.config/vifm/vifmrc
+	ln -s $PWD/.config/vifm/vifmrc ~/.config/vifm/vifmrc
+	echo "ln -s $PWD/.config/vifm/vifmrc ~/.config/vifm/vifmrc"
+
+
+   # Auto link
+	python3 ./autolink.py
+
 fi
