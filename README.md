@@ -76,7 +76,12 @@ Or copy custom configurations.
 Install from your package manager.  
 `sudo pacman -S xorg python3 brightnessctl libxrandr libnotify paru`  
 xidlehook is the same as xautolock but rewritten in Rust. Also i3lock-color is exactly the same as i3lock but I love to have colors.  
-`paru xidlehook i3lock-color`  
+`paru xidlehook i3lock-color`   
+
+### Install Vifmimg Script For Vifm's Image Preview, Video Thumbnail and others
+`git clone git@github.com:cirala/vifmimg.git && cd vifmimg`   
+`sudo make install`   
+Prerequisites here [https://github.com/cirala/vifmimg#prerequisites](https://github.com/cirala/vifmimg#prerequisites).
 
 
 ## Appearance
