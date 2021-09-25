@@ -1,0 +1,6 @@
+#include ".Xresources.d/xterm"
+#include ".Xresources.d/sxiv"
+
+*.alpha: 0.8
+*.font: mononoki Nerd Font Mono:size=13
+

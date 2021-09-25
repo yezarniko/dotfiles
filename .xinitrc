@@ -7,6 +7,9 @@
 # 
 # The xinit program allows a user to manually start an X display server.
 
+# Xresources
+user_resources=$HOME/.Xresources
+[ -f $user_resources ] && xrdb -merge $user_resources
 
 # beep off
 xset b off &

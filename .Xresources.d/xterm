@@ -1,0 +1,45 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.foreground: white
+XTerm.vt100.background: #2b2d39
+XTerm.vt100.faceName: mononoki Nerd Font Mono 
+XTerm.vt100.faceSize: 14
+XTerm.vt100.faceSize1: 10
+XTerm.vt100.faceSize2: 10
+XTerm.vt100.faceSize3: 12
+XTerm.vt100.faceSize4: 16
+XTerm.vt100.utf8: true
+
+!# Dracula Theme 
+
+!! black dark/light
+XTerm.vt100.color0: #000000
+XTerm.vt100.color8: #4d4d4d
+
+!!red dark/light
+XTerm.vt100.color1: #ff5555
+XTerm.vt100.color9: #ff6e67
+
+!!green dark/light
+XTerm.vt100.color2: #50fa7b
+XTerm.vt100.color10: #5af78e
+
+!!yellow dark/light
+XTerm.vt100.color3: #f1fa8c
+XTerm.vt100.color11: #f4f99d
+
+!!blue dark/light
+XTerm.vt100.color4: #bd93f9
+XTerm.vt100.color12: #caa9fa
+
+!!magenta dark/light
+XTerm.vt100.color5: #ff79c6
+XTerm.vt100.color13: #ff92d0
+
+!!cyan dark/light
+XTerm.vt100.color6: #8be9fd
+XTerm.vt100.color14: #9aedfe
+
+!!white dark/light
+XTerm.vt100.color7: #bfbfbf
+XTerm.vt100.color15: #e6e6e6
+
