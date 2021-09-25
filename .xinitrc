@@ -34,7 +34,7 @@ dunst &
 autolock &
 
 # wallpaper
-nitrogen --restore &
+xwallpaper --zoom ~/background &
 
 # Compositor 
 picom --config ~/.config/picom/picom.conf --experimental-backends &

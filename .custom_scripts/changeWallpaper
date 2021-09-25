@@ -1,0 +1,16 @@
+#!/bin/sh
+# modify script from luke smith
+
+bgdir=$HOME
+background="$(readlink -f "$1")"
+notify700="notify-send -t 700 -h string:x-canonical-private-synchronous:anything"
+notify2000="notify-send -t 2000 -h string:x-canonical-private-synchronous:anything"
+
+
+case "$(file --mime-type -b "$background")" in 
+	image/* ) [ -f "$bgdir/background" ] && rm "$bgdir/background" &&
+		  ln -s $background "$bgdir/background" && $notify700 -i pinball "Changing Background..." ;;
+	*) $notify700 -i dialog-error "Error not a valid image." ; exit 1 ;;
+esac
+
+xwallpaper --zoom $background && $notify2000 -i pinball "Wallpaper has Changed" 
