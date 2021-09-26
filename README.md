@@ -66,7 +66,7 @@ Or copy custom configurations.
 ### Install Packages
 #### Arch
   Install from your package manager.  
-  `sudo pacman -S alacritty qtile xorg-xinit vim neovim sxhkd dunst starship rofi vifm paru`  
+  `sudo pacman -S alacritty qtile xorg-xinit xwallpaper vim neovim sxhkd sxiv dunst starship rofi vifm paru`  
   picom has a lot of fork and I use jonaburg's one.  
   `paru picom-jonaburg-git`  
 
