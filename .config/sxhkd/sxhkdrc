@@ -35,7 +35,7 @@ super + space
 
 # Applications
 super + r
-	dmenu_run -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af'
+	dmenu_run -p "Run" -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af'
 super + e
 	brave
 ctrl + alt + {t, f}

@@ -20,21 +20,19 @@ def autolink(path, distPath):
         absPath = joinPath(path, f)
         absDistPath = joinPath(distPath, f)
         if os.path.exists(absDistPath):
-            if os.path.isfile(absDistPath):
-                os.remove(absDistPath)
-            elif os.path.islink(absDistPath):
-                os.remove(absDistPath)
-            elif os.path.isdir(absDistPath):
-                shutil.rmtree(absDistPath)
+            subprocess.call(["rm", "-r", f"{absDistPath}"])
         print(f"ln -s {absPath} {absDistPath}")
         subprocess.call(["ln", "-s", absPath, absDistPath])
 
 
-# .config
 configPath = joinPath(distPath, ".config")
+binPath = joinPath(distPath, ".local/bin")
+
+# .config
 autolink(joinPath(dotfilePath, ".config"), configPath)
 
-
 # custom_scripts
-scriptPath = joinPath(distPath, ".local/bin")
-autolink(joinPath(dotfilePath, ".custom_scripts"), scriptPath)
+autolink(joinPath(dotfilePath, "custom_scripts"), binPath)
+
+# dmenu_scripts
+autolink(joinPath(dotfilePath, "dmenu_scripts"), binPath)
