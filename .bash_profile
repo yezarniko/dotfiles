@@ -25,6 +25,9 @@ export PATH=$PATH:/home/choleburbank/Android/Sdk/platform-tools
 export QT_STYLE_OVERRIDE=Breeze
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+#FZF
+export FZF_DEFAULT_OPTS="--layout=reverse --height 50%"
+
 
 # Start X server
 if [[ "$(tty)" = "/dev/tty1" ]]; then
