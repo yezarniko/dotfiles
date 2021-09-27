@@ -1,0 +1,4 @@
+#!/bin/sh
+#change wallpaper
+
+sxiv -t ~/Pictures/wallpapers

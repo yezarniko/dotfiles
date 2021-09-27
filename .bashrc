@@ -81,12 +81,9 @@ alias fonts-list="fc-list"
 # vifm
 alias vifm="vifmrun"
 
-# change wallpaper
-alias cw="sxiv -t ~/Pictures/wallpapers"
-
 # config seacher
 cfg() { du -a ~/.dotfiles/.config ~/.dotfiles/.Xresources.d | awk '{print $2}' | fzf --tac  | xargs -r nvim ; }
-se() { du -a ~/.dotfiles/.custom_scripts | awk '{print $2}' | fzf --tac  | xargs -r nvim ; }
+se() { du -a ~/.dotfiles/custom_scripts ~/.dotfiles/dmenu_scripts  | awk '{print $2}' | fzf --tac  | xargs -r nvim ; }
 
 
 # Vi Mode
