@@ -1,0 +1,47 @@
+#!/bin/bash
+# Mount Yourself
+# Mount Shell Script for mounting and umounting disks
+# Yout have to use together with my dmenu script (dmount)
+
+notify="notify-send -t 4000 -h string:x-canonical-private-synchronous:anything"
+
+if [[ -n $2 ]]; then
+	
+	label=$(getDriveId $2 | awk '{print $1}')
+	uuid=$(getDriveId $2 | awk '{print $1}')
+
+	if [[ -n $label ]]; then
+		mountpoint="/mnt/$label"
+	else
+		mountpoint="/mnt/$uuid"
+	fi
+
+	[ ! -d $mountpoint ] && sudo -A mkdir $mountpoint
+
+	if [[ -n $1 ]]; then
+	case $1 in
+		"mount")
+			mountReturnMessage=$(sudo -A mount $2 $mountpoint 2>&1)
+
+			if [[ -n $mountReturnMessage ]]; then
+				$notify -i "drive-harddisk" \
+				"$(echo -n $mountReturnMessage | grep -P -o "/dev/[\w\ ]+/mnt/[\w-_%]+")"
+			else
+				$notify -i "drive-harddisk" "Mounted $2 on $mountpoint"
+			fi
+			;;
+		"umount")
+			umountReturnMessage=$(sudo -A umount $2 2>&1)
+			if [[ -n $umountReturnMessage ]]; then
+				$notify -i "drive-harddisk" "$umountReturnMessage"
+			else
+				$notify -i "drive-harddisk" "Umounted $2 ($mountpoint)"
+			fi
+			;;
+		*) echo "Usage: $0 <mount/umount> <device name>" ;;
+	esac
+
+	fi
+else
+	echo "Usage: $0 <mount/umount> <device name>"
+fi

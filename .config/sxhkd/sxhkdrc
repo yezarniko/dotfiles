@@ -32,10 +32,18 @@ alt + l
 super + space
 	toggle-keyboard-layout
 
-
-# Applications
+# Dmenu
 super + r
 	dmenu_run -p "Run" -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af'
+super + alt + s
+	dsudo
+super + alt + m
+	dmount mount
+super + alt + shift + m
+	dmount umount
+
+
+# Applications
 super + e
 	brave
 ctrl + alt + {t, f}

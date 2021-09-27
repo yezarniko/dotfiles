@@ -1,0 +1,7 @@
+#!/bin/sh
+# Simple Run Prompt for super user
+# Need dpass script
+
+dmenu_path | dmenu -p "sudo" -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af' | xargs -r /usr/bin/sudo -A 2>&1 &
+
+

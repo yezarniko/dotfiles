@@ -1,0 +1,12 @@
+#!/bin/bash
+# Use with dmount
+
+if [[ -n $1 ]]; then
+	label=$(udevadm info "$1" | awk -v FS== '/ID_FS_LABEL=/ {print $2}';)
+	uuid=$(udevadm info "$1" | awk -v FS== '/ID_FS_UUID=/ {print $2}';)
+
+	[[ -n $label ]] && echo -n "$label-$uuid " 
+	echo  -n "$uuid"
+else
+	echo "Usage: getDriveId <Drive Name>"
+fi

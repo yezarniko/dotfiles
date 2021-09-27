@@ -1,0 +1,35 @@
+#!/bin/bash
+# Dmenu Script For Mounting/Umounting Disks
+
+if [[ -n $1 ]]; then
+
+	drives=$(lsblk -l -o NAME | egrep "sd[b-z]+[0-9]")
+	getsize(){ lsblk -l -o SIZE /dev/$1 -n ; }
+	getfilesystem(){ echo "($(lsblk -l -o FSTYPE,FSVER /dev/$1 -n))" ; }
+	getmountPoint(){
+		mountpoint=$(lsblk -l -o MOUNTPOINT /dev/$1 -n)
+		if [[ -n $mountpoint ]]; then
+			echo "(mounted on $mountpoint)"
+		else
+			echo "(not mounted)"
+		fi
+	}
+
+	if [[ -n $drives ]]; then
+		drives_with_features=$(for d in $drives;\
+		do echo -n "$d ($(getDriveId /dev/$d)) ($(getsize $d)) $(getfilesystem $d) \
+			$(getmountPoint $d)\n"; done);
+		case "$1" in
+			"mount"|"umount") operation=$1 ;;
+			*) echo "Usage: dmount <mount/umount>" && exit 1 ;;
+		esac
+		echo -e ${drives_with_features::-2} \
+		| dmenu -l 2 -p $1 -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af' \
+				| awk '{print $1}' | xargs -r echo -en "/dev/" \
+					| sed  's| ||' | xargs -r mountys $1
+
+	else
+		notify-send -t 4000 -i "drive-harddisk" -h string:x-canonical-private-synchronous:anything "None of External Drive Plugin"
+	fi
+
+fi
