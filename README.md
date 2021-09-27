@@ -10,6 +10,7 @@
 ## Configurations
 - [Alacritty](.config/alacritty/alacritty.yml) - Terminal  
 - [Qtile](.config/qtile/config.py) - Window Manager written and configured in Python  
+- [Dmenu](dmenu_scripts) - Universal Suckless Dynamic Menu
 - [Xinit](.xinitrc) - X display server  
 - [Bash](.bashrc) - Bash  
 - [Vim](.vimrc) - Best Text Editor,IDE  
@@ -20,7 +21,7 @@
 - [Starship](.config/starship.toml) - Shell Prompt  
 - [Rofi](.config/rofi/config.rasi) - Applications Launcher  
 - [Vifm](.config/vifm/vifmrc) - Terminal Base Filemanager with Vim keybindings  
-- [Custom Scripts](.custom_scripts) - My Custom Scripts  
+- [Custom Scripts](custom_scripts) - My Custom Scripts  
 
 
 
@@ -66,7 +67,7 @@ Or copy custom configurations.
 ### Install Packages
 #### Arch
   Install from your package manager.  
-  `sudo pacman -S alacritty qtile xorg-xinit xwallpaper vim neovim sxhkd sxiv dunst starship rofi vifm paru`  
+  `sudo pacman -S alacritty qtile xorg-xinit xwallpaper vim neovim sxhkd sxiv dunst starship rofi vifm dmenu paru`  
   picom has a lot of fork and I use jonaburg's one.  
   `paru picom-jonaburg-git`  
 
