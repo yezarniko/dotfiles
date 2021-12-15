@@ -24,6 +24,7 @@ terminal = guess_terminal()
 
 colors = {
     "dracula": {
+        "arch":             "#0f94d2",
         "pink":             "#ad69af",
         "decade":           "#c678dd",
         "indigo":           "#6144e6",
@@ -42,7 +43,21 @@ colors = {
     },
 }
 
+cs = {
+    "arch": chr(int(0xf303)),
+    "linux": chr(int(0xe712)),
+    "javascript": chr(int(0xe781)),
+    "git": chr(int(0xf7a1)),
+    "python": chr(int(0xe606)),
+    "c": chr(int(0xe61e)),
+    "markdown": chr(int(0xe73e)),
+    "sass": chr(int(0xe603)),
+    "stackoverflow": chr(int(0xe710)),
+    "haskell": chr(int(0xe777)),
+
+}
 Egyption_Hieroglyph = ["𓂀", "𓃁", "𓈗", '𓃵', "𓂧", '𓄿', "𓅓", "𓆃"]
+c_s = [cs[l] for l in ("c","javascript","python","haskell","sass","git","markdown","stackoverflow")]
 
 
 # Bindings
@@ -99,7 +114,7 @@ keys = [
 
 # Groups
 
-groups = [Group(n) for n in Egyption_Hieroglyph.copy()]
+groups = [Group(n) for n in c_s.copy()]
 
 for i, n in enumerate(groups):
     keys.extend([
@@ -122,9 +137,10 @@ extension_defaults = widget_defaults.copy()
 
 groupBoxDecadeTheme = {
     "active": colors["dracula"]["indigo-light"],
-    "inactive": colors["dracula"]["black"],
+    "inactive": colors["dracula"]["gray-blue"],
     "background": colors["dracula"]["code"],
-    "font": "Roboto Bold",
+    "font": "mononoki Nerd Font Bold",
+    "fontsize": 32,
     "highlight_method": "line",
     "highlight_color": colors["dracula"]["code"],
     "this_current_screen_border": colors["dracula"]["red"],
@@ -137,7 +153,15 @@ sepTheme = {
     "foreground": colors["dracula"]["red"],
 }
 
+textBoxTheme = {
+    "background": colors["dracula"]["code"],
+    "foreground": colors["dracula"]["arch"],
+    "fontsize": 24,
+    "fmt": "{} ",
+}
+
 decade_bar_widgets = [
+    widget.TextBox(text=chr(int(0xf303)), **textBoxTheme),
     widget.GroupBox(**groupBoxDecadeTheme),
     widget.Sep(**sepTheme),
     widget.WindowName(
