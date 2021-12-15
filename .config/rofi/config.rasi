@@ -11,7 +11,6 @@
 configuration {
   modi: "run,ssh,combi";
   combi-modi: "run,ssh";
-  thread: 4;
   kb-remove-char-back: "BackSpace";
   kb-accept-entry: "Control+h,Return,KP_Enter";
   kb-remove-to-eol: "";
@@ -27,7 +26,7 @@ configuration {
   font: "mononoki Nerd Font Mono 14";
   foreground: #f8f8f2;
   background: #282a36;
-  active-background: #1d2021;
+  active-background: #ad69af;
   urgent-background: #ff5555;
   selected-background: @active-background;
   selected-urgent-background: @urgent-background;
