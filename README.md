@@ -26,7 +26,7 @@
 
 
 ## Screenshot
-![screenshot1](screenshot.png?raw=true)
+![screenshot3](screenshot3.png?raw=true)
 
 ## My Current System
 **OS**: Arch Linux x86_64  
