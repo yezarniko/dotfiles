@@ -1,4 +1,5 @@
 # Blacklist
 *~
+bookmarks
 __pycache__
 # Whitelist
