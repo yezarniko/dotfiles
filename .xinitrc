@@ -15,7 +15,7 @@ user_resources=$HOME/.Xresources
 xset b off &
 
 # enable touch to click
-xinput set-prop 10 340 1 &
+xinput set-prop "Synaptics TM3336-001" "libinput Tapping Enabled" 1
 
 # disable blanking screen
 xet -dpms &
