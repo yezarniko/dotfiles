@@ -10,7 +10,6 @@
 
 # Hostname
 
-HOSTNAME=$(hostnamectl | grep -E 'Static hostname: ' | cut -d ' ' -f4)
 
 #PS1
 

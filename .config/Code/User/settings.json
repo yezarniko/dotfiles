@@ -13,5 +13,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "vim.useSystemClipboard": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }

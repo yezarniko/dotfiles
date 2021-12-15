@@ -25,11 +25,17 @@ export PATH=$PATH:/home/choleburbank/Android/Sdk/platform-tools
 export QT_STYLE_OVERRIDE=Breeze
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+# Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # FZF
 export FZF_DEFAULT_OPTS="--layout=reverse --height 50%"
 
 # Sudo Dmenu Prompt 
 export SUDO_ASKPASS=~/.local/bin/dpass
+
+# Firebase
+export FIREBASE_IMPORTANT=/home/$USER/firebase_important
 
 
 # Start X server
