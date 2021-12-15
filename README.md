@@ -10,7 +10,8 @@
 ## Configurations
 - [Alacritty](.config/alacritty/alacritty.yml) - Terminal  
 - [Qtile](.config/qtile/config.py) - Window Manager written and configured in Python  
-- [Dmenu](dmenu_scripts) - Universal Suckless Dynamic Menu
+- [Dmenu](dmenu_scripts) - Universal Suckless Dynamic Menu   
+- [Rofi](.config/rofi/config.rasi) - Dmenu Replacement With More Features
 - [Xinit](.xinitrc) - X display server  
 - [Bash](.bashrc) - Bash  
 - [Vim](.vimrc) - Best Text Editor,IDE  
@@ -19,7 +20,6 @@
 - [Dunst](.config/dunst/dunstrc) - Lightweight Notifications Daemon  
 - [Picom](.config/picom/picom.conf) - Standalone Compositor For Xorg  
 - [Starship](.config/starship.toml) - Shell Prompt  
-- [Rofi](.config/rofi/config.rasi) - Applications Launcher  
 - [Vifm](.config/vifm/vifmrc) - Terminal Base Filemanager with Vim keybindings  
 - [Custom Scripts](custom_scripts) - My Custom Scripts  
 
