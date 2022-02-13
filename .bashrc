@@ -39,7 +39,7 @@ PS1='\[\e[32m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\]\[\e[31m\]{\[\e[m\]\w\[\e[31m\]}\[\e
 # Alias
 
 # ls
-alias ls='exa --color=always --group-directories-first --no-user --no-time --icons -l'
+alias ls='exa --color=always --group-directories-first --no-user --no-time --icons -lsnew'
 alias uls='/usr/bin/ls'
 alias ll='exa -lF --color=always --group-directories-first --no-user --no-time --icons -l'
 alias la='exa -Fa --color=always --group-directories-first --no-user --no-time --icons -l'

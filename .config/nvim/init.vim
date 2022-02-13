@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-css-color'
+Plug 'tpope/vim-fugitive'
 
 
 " Initialize plugin system

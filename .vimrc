@@ -38,8 +38,6 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 " Syntax
 Plugin 'cespare/vim-toml'
 
-" Git
-Plugin 'tpope/vim-fugitive'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
