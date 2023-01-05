@@ -130,7 +130,7 @@ for i, n in enumerate(groups):
 
 widget_defaults = dict(
     font='mononoki Nerd Font Bold',
-    fontsize=15,
+    fontsize=14,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -169,21 +169,8 @@ decade_bar_widgets = [
         foreground=colors["dracula"]["black"],
     ),
     widget.Sep(**sepTheme),
-    widget.CheckUpdates(
-        update_interval=1800,
-        colour_have_updates=colors["dracula"]["green"],
-        colour_no_updates=colors["dracula"]["green"],
-        display_format='📦⬆️<span color="#c678dd">({updates})</span> ',
-        no_update_string="📦 ",
-    ),
-    widget.Net(
-        fontsize=16,
-        font="mononoki Nerd Font Mono",
-        format='{down}<span color="#50fa7b">▽</span> {up}<span color="#50fa7b">△</span> ',
-        foreground=colors["dracula"]["gray-blue"],
-    ),
     widget.Clock(
-        format='<span color="#ff5555">🕐</span> %I:%M %p ',
+        format='%I:%M %p ',
         foreground=colors["dracula"]["gray-blue"],
     ),
     widget.Battery(

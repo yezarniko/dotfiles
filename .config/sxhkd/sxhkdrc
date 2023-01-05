@@ -17,31 +17,30 @@ XF86AudioMute
 
 # Brightness Control
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
-	brightnessctl -d intel_backlight set {5%+, 5%-} -q && bright-notify
+	brightnessctl -d intel_backlight set {5%+, 5%-} -q
 	
+# Toggle Keyboard
+super + space
+	toggle-keyboard-layout
+
 
 # ScreenShot
 Print
 	xfce4-screenshooter
 
-# LockScreen
+# lockscreen
 alt + l
-	lock
+	xautolock -locknow -locker slock && systemctl suspend
 
-# Toggle Input
-super + space
-	toggle-keyboard-layout
 
 # Dmenu
 super + r
 	dmenu_run -p "Run" -nb '#222222' -sf '#222222' -sb '#ad69af' -nf '#ad69af'
-super + alt + s
-	dsudo
+
 super + alt + m
 	dmount mount
 super + alt + shift + m
 	dmount umount
-
 
 # Applications
 super + e
@@ -50,4 +49,3 @@ ctrl + alt + {t, f}
 	{terminator, thunar}
 super + c
 	code
-
