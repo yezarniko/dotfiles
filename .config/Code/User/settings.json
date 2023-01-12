@@ -1,22 +1,24 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 18,
-    "editor.lineNumbers": "relative",
-    "vim.vimrc.path": "$HOME/.vimrc",
-    "terminal.integrated.fontFamily": "mononoki Nerd Font Mono",
-    "terminal.integrated.fontSize": 18,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "vim.useSystemClipboard": true,
-    "editor.tabSize": 2,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "workbench.editor.enablePreview": false
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "simple-icons",
+  "editor.fontSize": 18,
+  "editor.lineNumbers": "relative",
+  "vim.vimrc.path": "$HOME/.vimrc",
+  "terminal.integrated.fontFamily": "mononoki Nerd Font Mono",
+  "terminal.integrated.fontSize": 18,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.useSystemClipboard": true,
+  "editor.tabSize": 2,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "'Fira Code iScript', 'Droid Sans Mono', 'monospace', monospace",
+  "files.autoSave": "afterDelay"
 }
