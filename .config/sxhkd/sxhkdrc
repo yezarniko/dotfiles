@@ -30,7 +30,7 @@ Print
 
 # lockscreen
 alt + l
-	xautolock -locknow -locker slock && systemctl suspend
+	setxkbmap us && xautolock -locknow -locker slock && systemctl suspend
 
 
 # Dmenu
